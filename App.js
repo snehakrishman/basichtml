@@ -1,16 +1,15 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-
 import './App.css';
-import Register from './Component/Register';
-import Login from './Component/login';
+import Add from './Component/Add';
+import List from './Component/List';
 
-function App() {
+function App(){
   return (
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Register/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/' element={<Add/>}/>
+      <Route path='/List' element={<List/>}/>
       
     </Routes>
     </BrowserRouter>
